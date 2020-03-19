@@ -1,2 +1,1 @@
-# rick
-new one
+# for NCKU EE UIDD
