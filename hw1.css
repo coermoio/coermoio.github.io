@@ -1,0 +1,176 @@
+@font-face{
+	font-family: Garamond; 
+	src: url(./web/GARA.TTF);
+}
+@font-face {
+	font-family: Harmony;
+	src: url(./web/Harmony.ttf);
+}
+
+body {
+	position: relative;
+    overflow: hidden;
+	background-image: url("./web/main/background.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	bottom: 0%;
+}
+
+#main_circle {
+	z-index: 1;
+	margin: -20em -20em;
+	height: 40em;
+	width: 40em;
+	background-color: #ffffff;
+	opacity: 30%;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 47vh;
+}
+
+.timeline{
+	z-index: 1;
+	margin: -2.3em -2.3em;
+	height: 40em;
+	width: 40em;
+	position: absolute;
+	border:0.3em solid white;
+	padding:  2em;
+	border-radius: 50%;
+}
+/*
+#shadow {
+	margin-top: -5vh;
+	left: -8%	;
+	z-index: 0;
+	background-color: black;
+	height: 100vh;
+	width: 100vw;
+	opacity: 35%;
+	position: absolute;
+	visibility: hidden;
+}*/
+
+#r, #g, #b {
+	z-index: 3;
+	height: 80px;
+	width: 80px;
+	opacity: 70%;
+	border-radius: 50%;
+	bottom: calc(15% - 40px);
+	position: absolute;
+}
+#r {
+	background-color: rgb(229, 125, 108);
+	left: calc(35% - 40px);
+}
+#b {
+	background-color: rgb(	8,  53,  81);
+	left: calc(50% - 40px);
+}
+#g {
+	background-color: rgb( 95, 141, 142);
+	left: calc(65% - 40px);
+}
+
+#t1,#t2,.t3 {
+	margin:0;
+	z-index: 2;
+	position: absolute;
+}
+#t1,#t2 {
+	font-family: Garamond;
+	color: #666666;
+}
+#t1 {
+	left: 37.5%;
+	top: 42%;
+	font-size:4.5vw;
+}
+#t2 {
+	top: 2em;
+	right: 3em;
+	text-align: right;
+	font-size:1.5vw;
+}
+.t3 {
+	top: 6vh;
+	color: rgb(102,102,102);
+	font-family: Harmony;
+	font-size:8vw;
+	visibility: hidden;
+}
+
+.red_design.t3{left: 42.5%;}
+.redgreen_design.t3{left: 32%;}
+.redblue_design.t3{left: 32.5%;}
+.redgreenblue_design.t3{left: 23%;}
+.www{left:43%;}
+
+.cp{
+	position: fixed;
+	top: 28%;
+	left: 0;
+	height: 60vh;
+}
+
+.decide{
+	visibility: hidden;
+}
+
+.bar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 1.5vh;
+	width: 25vw;
+	opacity: 40%;
+}
+.bar.red{
+	background-image: linear-gradient(to right, rgb(200, 89, 61, 78), rgb(226, 207, 202, 40));
+}
+.bar.redblue{
+	background-image: linear-gradient(to right, rgb(200, 89, 61, 40), rgb(8, 53, 81, 52) 79.48%, rgb(8, 53, 81, 52));
+}
+.bar.redgreen{
+	background-image: linear-gradient(to right, rgb(200, 89, 61, 40), rgb(95, 141, 142, 52) 79.48%, rgb(95, 141, 142, 52));
+}
+.bar.redgreenblue{
+	background-image: linear-gradient(to right, rgb(200, 89, 61, 40), rgb(95, 141, 142, 100) 49.33%, rgb(8, 53, 81, 52) 96.86%,  rgb(8, 53, 81, 52));
+}
+
+.icon{
+	z-index: 4;
+	height: 5vh;
+	width: 5vh;
+	background-repeat: no-repeat;
+}
+.x{
+	margin-left: -19.5px;
+	top: 3%;
+	left:50%;
+	position: fixed;
+}
+.arrow{
+	margin-left: -2.5vh;
+	bottom: 5%;
+	position: fixed;
+}
+.left{left:46%;}
+.right{left:53%;}
+
+.icon.x{background-image: url(./web/style/res/叉叉.png);}
+.icon.arrow.left{background-image: url(./web/style/res/左鍵.png);}
+.icon.arrow.right{background-image: url(./web/style/res/右鍵.png);}
+/*
+.home{
+	animation-name: fade;
+	animation-duration: 1s;
+}
+@keyframes fade {
+	from {opacity: 100% }
+	to {opacity: 0% }
+}*/

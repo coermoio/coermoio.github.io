@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Color Your Life</title>
+    <link href="hw1.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <div id = "text">
+      <p id ="t1" class = "home">Color your life</p>
+      <p id ="t2">About</p>
+      <p class = "t3 red_design">Living Coral</p>
+      <p class = "t3 redblue_design"> Living Coral x Classic Blue</p>
+      <p class = "t3 redgreen_design">Living Coral x Greenery</p>
+      <p class = "t3 redgreenblue_design">Living Coral x Greenery x Classic Blue</p>
+      <p class = "t3 www">No Pic</p>
+      
+    </div>
+
+    <div id ="main_circle" class = "home">
+      <div class ="timeline"></div>
+    </div>
+
+    <div id ="option_circle" class = "home">
+      <div id ="r" onclick="changemc('r', 'rgb(229, 125, 108)')"></div>
+      <div id ="g" onclick="changemc('g', 'rgb(8, 53, 81)')"></div>
+      <div id ="b" onclick="changemc('b', 'rgb(95, 141, 142)')"></div>
+    </div>
+
+    <div class = "decide">
+      <i class = "x icon" onclick="changehome()"></i>
+      <i class = "right arrow icon"></i>
+      <i class = "left arrow icon"></i>
+    </div>
+
+    <div style=" visibility: hidden">
+      <div class = "red_design" >
+        <img src="./web/style/r/p.png" class = "cp"></img>
+        <i class = "red bar"></i>
+      </div>
+  
+      <div class = "redblue_design">
+        <img src="./web/style/紅藍/圖.png" class = "cp"></img>
+        <i class="redblue bar"></i>
+      </div>
+  
+      <div class = "redgreen_design">
+        <img src="./web/style/紅綠/圖.png" class = "cp"></img>
+        <i class="redgreen bar"></i>
+      </div>
+  
+      <div class = "redgreenblue_design">
+        <img src="./web/style/紅藍綠/圖.png" class = "cp"></img>
+        <i class = "redgreenblue bar"></i>
+      </div>
+    </div>
+  <script src="./hw1.js"></script>
+  </body>
+</html>
